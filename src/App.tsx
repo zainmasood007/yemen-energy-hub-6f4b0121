@@ -21,6 +21,7 @@ import LithiumVsLeadAcid from "./pages/knowledge/LithiumVsLeadAcid";
 import SolarYemenGuide from "./pages/knowledge/SolarYemenGuide";
 import InverterSizingGuide from "./pages/knowledge/articles/InverterSizingGuide";
 import InverterCommonFaults from "./pages/knowledge/articles/InverterCommonFaults";
+import LithiumBatteryLifespan from "./pages/knowledge/articles/LithiumBatteryLifespan";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -53,6 +54,7 @@ const App = () => (
             {/* Supporting Articles */}
             <Route path="/knowledge/inverter-sizing" element={<InverterSizingGuide />} />
             <Route path="/knowledge/inverter-common-faults" element={<InverterCommonFaults />} />
+            <Route path="/knowledge/lithium-battery-lifespan" element={<LithiumBatteryLifespan />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
