@@ -151,13 +151,19 @@ export const panelProducts: Product[] = [
         questionAr: 'كم لوح أحتاج لمنزلي؟',
         questionEn: 'How many panels do I need for my home?',
         answerAr: 'يعتمد على استهلاكك. كمتوسط، 8-10 ألواح (حوالي 4 كيلوواط) تغطي احتياجات منزل متوسط في اليمن.',
-        answerEn: 'Depends on your consumption. On average, 8-10 panels (about 4kW) cover a typical home\'s needs in Yemen.',
+        answerEn: "Depends on your consumption. On average, 8-10 panels (about 4kW) cover a typical home's needs in Yemen.",
       },
       {
         questionAr: 'ما معنى ضمان 30 سنة؟',
         questionEn: 'What does 30-year warranty mean?',
         answerAr: 'ضمان الأداء 30 سنة يعني أن اللوح سيحتفظ بأكثر من 87% من كفاءته الأصلية بعد 30 سنة. ضمان المنتج 15 سنة ضد عيوب التصنيع.',
         answerEn: 'Performance warranty of 30 years means the panel will retain over 87% of original efficiency after 30 years. Product warranty is 15 years against manufacturing defects.',
+      },
+      {
+        questionAr: 'هل اللوح مقاوم للملوحة في المناطق الساحلية؟',
+        questionEn: 'Is the panel salt-resistant for coastal areas?',
+        answerAr: 'نعم، الزجاج المزدوج يوفر حماية ممتازة من الملوحة والرطوبة، مما يجعله الخيار الأمثل لعدن والحديدة وحضرموت.',
+        answerEn: 'Yes, dual glass provides excellent protection from salinity and humidity, making it optimal for Aden, Hudaydah, and Hadramout.',
       },
     ],
 
@@ -336,6 +342,18 @@ export const panelProducts: Product[] = [
         questionEn: 'How much does it produce daily in Yemen?',
         answerAr: 'في المتوسط، حوالي 2.5-3 كيلوواط ساعة يومياً للوح الواحد، حسب الموقع والموسم.',
         answerEn: 'On average, about 2.5-3kWh daily per panel, depending on location and season.',
+      },
+      {
+        questionAr: 'كم لوح أحتاج لتشغيل مضخة مياه؟',
+        questionEn: 'How many panels do I need to run a water pump?',
+        answerAr: 'يعتمد على قدرة المضخة. مضخة 3 حصان تحتاج حوالي 6-8 ألواح Vertex 580W.',
+        answerEn: 'Depends on pump capacity. 3HP pump needs about 6-8 Vertex 580W panels.',
+      },
+      {
+        questionAr: 'هل يتحمل الغبار والأتربة؟',
+        questionEn: 'Does it withstand dust and sand?',
+        answerAr: 'نعم، الزجاج المقوى مقاوم للخدش. ينصح بتنظيف الألواح كل 2-3 أشهر لأداء أمثل.',
+        answerEn: 'Yes, tempered glass is scratch resistant. Recommended to clean panels every 2-3 months for optimal performance.',
       },
     ],
 

@@ -57,10 +57,13 @@ export const inverterProducts: Product[] = [
 
     specifications: [
       { keyAr: 'القدرة المستمرة', keyEn: 'Continuous Power', value: '1000', unit: 'W' },
+      { keyAr: 'القدرة اللحظية', keyEn: 'Peak Power', value: '2000', unit: 'W' },
       { keyAr: 'جهد البطارية', keyEn: 'Battery Voltage', value: '12', unit: 'V' },
       { keyAr: 'نوع الموجة', keyEn: 'Wave Type', value: 'موجة صافية / Pure Sine Wave' },
       { keyAr: 'شاحن شمسي', keyEn: 'Solar Charger', value: 'MPPT مدمج / Built-in MPPT' },
       { keyAr: 'كفاءة التحويل', keyEn: 'Conversion Efficiency', value: '93+', unit: '%' },
+      { keyAr: 'أقصى تيار شحن', keyEn: 'Max Charge Current', value: '30', unit: 'A' },
+      { keyAr: 'الحماية', keyEn: 'Protection', value: 'شحن زائد، تفريغ عميق، قصر دائرة' },
     ],
 
     yemenSuitability: {
@@ -80,15 +83,15 @@ export const inverterProducts: Product[] = [
 
     useCases: [
       {
-        titleAr: 'الكرفانات',
-        titleEn: 'Caravans',
-        descAr: 'الخيار الأول للرحلات البرية',
-        descEn: 'First choice for road trips',
+        titleAr: 'الكرفانات والرحلات',
+        titleEn: 'Caravans & Trips',
+        descAr: 'الخيار الأول للرحلات البرية والتخييم',
+        descEn: 'First choice for road trips and camping',
         icon: 'Caravan',
       },
       {
-        titleAr: 'الغرف الصغيرة',
-        titleEn: 'Small Rooms',
+        titleAr: 'الغرف والاستراحات',
+        titleEn: 'Rooms & Cabins',
         descAr: 'إضاءة ومراوح وشحن أجهزة',
         descEn: 'Lighting, fans, and device charging',
         icon: 'Lamp',
@@ -96,9 +99,16 @@ export const inverterProducts: Product[] = [
       {
         titleAr: 'المزارع الصغيرة',
         titleEn: 'Small Farms',
-        descAr: 'تشغيل أجهزة الري البسيطة',
-        descEn: 'Run simple irrigation devices',
+        descAr: 'تشغيل أجهزة الري البسيطة والإنارة',
+        descEn: 'Run simple irrigation devices and lighting',
         icon: 'Leaf',
+      },
+      {
+        titleAr: 'نقاط البيع المتنقلة',
+        titleEn: 'Mobile POS',
+        descAr: 'تشغيل أجهزة الكاشير والإنترنت في المواقع المؤقتة',
+        descEn: 'Run POS and internet in temporary locations',
+        icon: 'Store',
       },
     ],
 
@@ -137,6 +147,24 @@ export const inverterProducts: Product[] = [
         questionEn: 'How many batteries do I need?',
         answerAr: 'بطارية واحدة 12 فولت (100-200 أمبير) تكفي للاستخدام الأساسي.',
         answerEn: 'One 12V battery (100-200Ah) is enough for basic use.',
+      },
+      {
+        questionAr: 'كم لوح شمسي يحتاج؟',
+        questionEn: 'How many solar panels does it need?',
+        answerAr: 'لوح واحد 400W أو اثنين 200W كافية لشحن البطارية يومياً.',
+        answerEn: 'One 400W panel or two 200W panels are enough to charge the battery daily.',
+      },
+      {
+        questionAr: 'هل مناسب للاستخدام الدائم في المنزل؟',
+        questionEn: 'Is it suitable for permanent home use?',
+        answerAr: 'للأحمال الخفيفة فقط. للمنزل الكامل، ننصح بـ SP5000 أو أعلى.',
+        answerEn: 'For light loads only. For full home, we recommend SP5000 or higher.',
+      },
+      {
+        questionAr: 'ما الفرق بين SP1000 و SP1200؟',
+        questionEn: 'What is the difference between SP1000 and SP1200?',
+        answerAr: 'SP1200 يدعم ألواح أكبر وقدرة إخراج أعلى (1200W مقابل 1000W).',
+        answerEn: 'SP1200 supports larger panels and higher output (1200W vs 1000W).',
       },
     ],
 
@@ -206,10 +234,13 @@ export const inverterProducts: Product[] = [
 
     specifications: [
       { keyAr: 'القدرة المستمرة', keyEn: 'Continuous Power', value: '1200', unit: 'W' },
+      { keyAr: 'القدرة اللحظية', keyEn: 'Peak Power', value: '2400', unit: 'W' },
       { keyAr: 'جهد البطارية', keyEn: 'Battery Voltage', value: '12', unit: 'V' },
-      { keyAr: 'أقصى جهد PV', keyEn: 'Max PV Voltage', value: 'عالي / High' },
+      { keyAr: 'أقصى جهد PV', keyEn: 'Max PV Voltage', value: '150+', unit: 'V' },
+      { keyAr: 'أقصى قدرة PV', keyEn: 'Max PV Power', value: '580', unit: 'W' },
       { keyAr: 'نوع الموجة', keyEn: 'Wave Type', value: 'موجة صافية / Pure Sine Wave' },
       { keyAr: 'شاحن شمسي', keyEn: 'Solar Charger', value: 'MPPT مدمج / Built-in MPPT' },
+      { keyAr: 'كفاءة التحويل', keyEn: 'Conversion Efficiency', value: '93+', unit: '%' },
     ],
 
     yemenSuitability: {
@@ -231,16 +262,30 @@ export const inverterProducts: Product[] = [
       {
         titleAr: 'المنازل الصغيرة',
         titleEn: 'Small Homes',
-        descAr: 'إضاءة ومراوح وتلفزيون',
-        descEn: 'Lighting, fans, and TV',
+        descAr: 'إضاءة ومراوح وتلفزيون مع ألواح حديثة كبيرة',
+        descEn: 'Lighting, fans, and TV with modern large panels',
         icon: 'Home',
       },
       {
-        titleAr: 'المحلات التجارية',
+        titleAr: 'المحلات التجارية الصغيرة',
         titleEn: 'Small Shops',
-        descAr: 'إضاءة وأجهزة كاشير',
-        descEn: 'Lighting and POS devices',
+        descAr: 'إضاءة وأجهزة كاشير ونقاط بيع',
+        descEn: 'Lighting, POS devices, and sales points',
         icon: 'Store',
+      },
+      {
+        titleAr: 'الاستراحات والمخيمات',
+        titleEn: 'Cabins & Camps',
+        descAr: 'طاقة شمسية للمواقع البعيدة عن الشبكة',
+        descEn: 'Solar power for off-grid locations',
+        icon: 'Tent',
+      },
+      {
+        titleAr: 'المزارع الصغيرة',
+        titleEn: 'Small Farms',
+        descAr: 'تشغيل مضخات صغيرة وإنارة',
+        descEn: 'Run small pumps and lighting',
+        icon: 'Leaf',
       },
     ],
 
@@ -267,8 +312,32 @@ export const inverterProducts: Product[] = [
       {
         questionAr: 'ما الفرق بين SP1200 و SP1000؟',
         questionEn: 'What is the difference between SP1200 and SP1000?',
-        answerAr: 'SP1200 يدعم ألواح أكبر (حتى 580W) وقدرة إخراج أعلى (1200W).',
-        answerEn: 'SP1200 supports larger panels (up to 580W) and higher output (1200W).',
+        answerAr: 'SP1200 يدعم ألواح أكبر (حتى 580W) وقدرة إخراج أعلى (1200W). SP1000 أرخص وأخف.',
+        answerEn: 'SP1200 supports larger panels (up to 580W) and higher output (1200W). SP1000 is cheaper and lighter.',
+      },
+      {
+        questionAr: 'لماذا أختار SP1200 بدلاً من SP3000؟',
+        questionEn: 'Why choose SP1200 over SP3000?',
+        answerAr: 'SP1200 يعمل ببطارية واحدة 12V فقط (أرخص)، بينما SP3000 يحتاج بطاريتين 24V.',
+        answerEn: 'SP1200 works with just one 12V battery (cheaper), while SP3000 needs two 24V batteries.',
+      },
+      {
+        questionAr: 'هل يشغل ثلاجة متوسطة؟',
+        questionEn: 'Can it run a medium fridge?',
+        answerAr: 'ثلاجة 10 قدم يمكن تشغيلها، لكن مع أحمال أخرى قليلة فقط.',
+        answerEn: "10ft fridge can run, but with only few other loads.",
+      },
+      {
+        questionAr: 'كم لوح Vertex يمكن توصيله؟',
+        questionEn: 'How many Vertex panels can be connected?',
+        answerAr: 'لوح واحد Vertex 580W كافي. الجهد العالي يسمح باستخدام ألواح حديثة مباشرة.',
+        answerEn: 'One Vertex 580W panel is enough. High voltage allows using modern panels directly.',
+      },
+      {
+        questionAr: 'هل يحتاج صيانة؟',
+        questionEn: 'Does it need maintenance?',
+        answerAr: 'لا، فقط تأكد من التهوية الجيدة وتنظيف فلتر الغبار كل 6 أشهر.',
+        answerEn: 'No, just ensure good ventilation and clean dust filter every 6 months.',
       },
     ],
 
@@ -569,6 +638,18 @@ export const inverterProducts: Product[] = [
         questionEn: 'How many solar panels do I need?',
         answerAr: '8-10 ألواح Vertex S+ (حوالي 4 كيلوواط) للتغطية الجيدة.',
         answerEn: '8-10 Vertex S+ panels (about 4kW) for good coverage.',
+      },
+      {
+        questionAr: 'هل يعمل بدون كهرباء حكومية؟',
+        questionEn: 'Does it work without government electricity?',
+        answerAr: 'نعم، يعمل بالكامل على الطاقة الشمسية والبطاريات (نظام Off-Grid).',
+        answerEn: 'Yes, works completely on solar and batteries (Off-Grid system).',
+      },
+      {
+        questionAr: 'ما حجم المكيف الذي يشغله؟',
+        questionEn: 'What AC size can it run?',
+        answerAr: 'مكيف 1-1.5 طن بسهولة. للمكيفات الأكبر أو أكثر من مكيف، استخدم SP8000.',
+        answerEn: '1-1.5 ton AC easily. For larger ACs or more than one, use SP8000.',
       },
     ],
 
