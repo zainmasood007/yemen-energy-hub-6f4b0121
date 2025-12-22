@@ -4,15 +4,15 @@
 
 import { Product, ProductCategory, Category, ProductFilters } from './types';
 import { categories, getCategoryBySlug, getCategoryName } from './categories';
-import { pylontechProducts } from './pylontech';
+import { batteryProducts } from './batteries';
+import { panelProducts } from './panels';
+import { inverterProducts } from './inverters';
 
 // Combine all products
 export const allProducts: Product[] = [
-  ...pylontechProducts,
-  // Add other categories here as they're created:
-  // ...panelProducts,
-  // ...inverterProducts,
-  // ...controllerProducts,
+  ...batteryProducts,
+  ...panelProducts,
+  ...inverterProducts,
 ];
 
 // Get all products
