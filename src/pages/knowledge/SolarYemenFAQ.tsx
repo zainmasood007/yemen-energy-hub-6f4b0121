@@ -77,6 +77,60 @@ const faqs = [
     answerEn:
       'We provide official manufacturer warranties on Pylontech batteries up to 10 years, and different warranties on inverters and panels depending on the brand, plus local after-sales support inside Yemen.',
   },
+  {
+    id: 'bad-grid',
+    questionAr: 'هل الطاقة الشمسية مجدية في المناطق ذات الانقطاع المستمر للكهرباء في اليمن؟',
+    questionEn: 'Is solar energy worth it in Yemeni areas with very poor or no grid?',
+    answerAr:
+      'كلما زادت ساعات انقطاع الكهرباء الحكومية في اليمن زادت جدوى تركيب نظام طاقة شمسية مع بطاريات ليثيوم. الأنظمة المصممة بشكل صحيح توفر طاقة مستقرة على مدار اليوم وتقلل اعتمادك على الديزل والمولدات بشكل كبير.',
+    answerEn:
+      'The more frequent the power cuts in Yemen, the more beneficial a properly sized solar system with lithium batteries becomes. A well-designed system gives you stable power all day and greatly reduces dependence on diesel generators.',
+  },
+  {
+    id: 'load-priority',
+    questionAr: 'ما أهم الأحمال التي يُنصح بتشغيلها على النظام الشمسي في اليمن؟',
+    questionEn: 'Which loads should you prioritize on a solar system in Yemen?',
+    answerAr:
+      'في المنازل اليمنية ننصح عادة بتركيز النظام على الإنارة، الثلاجات، شحن الأجهزة، شاشات التلفزيون، والمراوح أو المكيفات الموفرة للطاقة. يمكن تصميم أنظمة خاصة للمضخات أو المشاريع التجارية مع دراسة حمل مفصلة.',
+    answerEn:
+      'For typical Yemeni homes we recommend prioritizing lights, fridges, device charging, TVs, and efficient fans or ACs. Dedicated systems for pumps or commercial projects are also possible after a detailed load assessment.',
+  },
+  {
+    id: 'dust-and-heat',
+    questionAr: 'كيف يؤثر الغبار وحرارة الشمس في اليمن على كفاءة النظام؟',
+    questionEn: 'How do dust and high temperatures in Yemen affect solar performance?',
+    answerAr:
+      'الغبار يقلل من كفاءة الألواح إذا لم تُنظّف بانتظام، والحرارة العالية تخفّض القدرة الفعلية قليلاً. لذلك نعتمد ألواحًا عالية الجودة مع معامل حرارة مناسب، وننصح بتنظيف دوري وتثبيت الألواح بزاوية تسمح بتصريف الأتربة والمياه.',
+    answerEn:
+      'Dust reduces panel output if not cleaned regularly and high temperatures slightly lower actual power. We therefore use high‑quality panels with good temperature coefficients and recommend periodic cleaning plus mounting angles that help dust and water slide off.',
+  },
+  {
+    id: 'subsidies',
+    questionAr: 'هل توجد حالياً دعم أو تمويل لأنظمة الطاقة الشمسية في اليمن؟',
+    questionEn: 'Are there any subsidies or financing options for solar systems in Yemen?',
+    answerAr:
+      'برامج الدعم الرسمية للطاقة الشمسية في اليمن محدودة ومتغيرة، لكن يمكن في بعض الحالات توفير حلول تقسيط أو مرحلية حسب المشروع. تواصل معنا لمعرفة الخيارات المتاحة حالياً في مدينتك.',
+    answerEn:
+      'Official solar subsidies in Yemen are limited and change over time, but in some cases we can design phased or installment-based solutions depending on the project. Contact us to learn what options are currently available in your city.',
+  },
+  {
+    id: 'business-use',
+    questionAr: 'هل الطاقة الشمسية مناسبة للمحلات التجارية والمصانع في اليمن؟',
+    questionEn: 'Is solar energy suitable for shops and factories in Yemen?',
+    answerAr:
+      'نعم، يمكن تصميم أنظمة طاقة شمسية للمحلات، الورش، المستشفيات، مزارع الدواجن، والمصانع في اليمن مع دراسة مفصلة للأحمال وأوقات الذروة. في المشاريع التجارية يُركز التصميم على تقليل كلفة الكيلووات ساعة واستقرار الطاقة.',
+    answerEn:
+      'Yes. We can design solar systems for shops, workshops, clinics, poultry farms, and factories in Yemen based on detailed load and peak-time analysis. For commercial projects we focus on lowering the cost per kWh and ensuring power stability.',
+  },
+  {
+    id: 'after-sales',
+    questionAr: 'ما نوع خدمة ما بعد البيع والدعم الفني التي توفرونها داخل اليمن؟',
+    questionEn: 'What after‑sales and technical support do you provide inside Yemen?',
+    answerAr:
+      'نوفر تركيباً احترافياً، فحصاً دورياً عند الحاجة، ودعماً فنياً عبر الهاتف وواتساب داخل اليمن. كما نساعد في تحديث إعدادات الانفرتر والبطاريات، وحل المشاكل الشائعة في الشبكات المنزلية والتجارية.',
+    answerEn:
+      'We offer professional installation, periodic inspections when needed, and technical support by phone and WhatsApp inside Yemen. We also help update inverter and battery settings and troubleshoot common issues in residential and commercial systems.',
+  },
 ];
 
 function createFaqJsonLd() {
