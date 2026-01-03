@@ -10,6 +10,7 @@ import ProductPage from "./pages/ProductPage";
 import Pylontech from "./pages/Pylontech";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
 import Locations from "./pages/Locations";
 import LocationPage from "./pages/LocationPage";
 import KnowledgeHub from "./pages/knowledge";
@@ -29,6 +30,7 @@ import AdminLocalRoutes from "./admin/AdminLocalRoutes";
 import { allProducts } from "@/data/products";
 import { pillarPages, supportingArticles } from "@/data/articles";
 import { citySlugs } from "./pages/LocationPage";
+import { projects as projectData } from "@/data/projects";
 
 export const routes: RouteRecord[] = [
   {
@@ -57,6 +59,11 @@ export const routes: RouteRecord[] = [
       { path: "pylontech", Component: Pylontech },
       { path: "contact", Component: Contact },
       { path: "projects", Component: Projects },
+      {
+        path: "projects/:slug",
+        Component: ProjectDetail,
+        getStaticPaths: () => projectData.filter((p) => p.slug).map((p) => `projects/${p.slug}`),
+      },
       { path: "locations", Component: Locations },
       {
         path: "locations/:citySlug",
@@ -123,6 +130,11 @@ export const routes: RouteRecord[] = [
       { path: "pylontech", Component: Pylontech },
       { path: "contact", Component: Contact },
       { path: "projects", Component: Projects },
+      {
+        path: "projects/:slug",
+        Component: ProjectDetail,
+        getStaticPaths: () => projectData.filter((p) => p.slug).map((p) => `projects/${p.slug}`),
+      },
       { path: "locations", Component: Locations },
       {
         path: "locations/:citySlug",

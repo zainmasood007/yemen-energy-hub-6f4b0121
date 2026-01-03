@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { 
@@ -275,15 +276,17 @@ export default function Projects() {
                       ))}
                     </div>
 
-                    {/* View Gallery Button */}
+                    {/* View Details Button */}
                     <Button 
+                      asChild
                       variant="outline" 
                       size="sm" 
                       className="w-full"
-                      onClick={() => openGallery(project)}
                     >
-                      <Eye className="h-4 w-4" />
-                      {isRTL ? 'عرض التفاصيل' : 'View Details'}
+                      <Link to={`${isEnPath ? '/en' : ''}/projects/${project.slug}`}>
+                        <Eye className="h-4 w-4" />
+                        {isRTL ? 'عرض التفاصيل' : 'View Details'}
+                      </Link>
                     </Button>
                   </div>
                 </article>
