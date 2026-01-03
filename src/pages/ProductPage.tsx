@@ -579,23 +579,40 @@ export default function ProductPage() {
       {/* FAQ */}
       <section className="py-12 bg-surface">
         <div className="container">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <HelpCircle className="h-6 w-6 text-primary" />
-              {isRTL ? 'أسئلة شائعة' : 'Frequently Asked Questions'}
-            </h2>
-            <Accordion type="single" collapsible className="space-y-3">
-              {product.faqs.map((faq, i) => (
-                <AccordionItem key={i} value={`faq-${i}`} className="bg-card border border-border rounded-xl px-4">
-                  <AccordionTrigger className="hover:no-underline py-4">
-                    <span className="text-start font-medium">{isRTL ? faq.questionAr : faq.questionEn}</span>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-4">
-                    {isRTL ? faq.answerAr : faq.answerEn}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <div>
+              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
+                <HelpCircle className="h-6 w-6 text-primary" />
+                {isRTL ? 'أسئلة شائعة' : 'Frequently Asked Questions'}
+              </h2>
+              <Accordion type="single" collapsible className="space-y-3">
+                {product.faqs.map((faq, i) => (
+                  <AccordionItem key={i} value={`faq-${i}`} className="bg-card border border-border rounded-xl px-4">
+                    <AccordionTrigger className="hover:no-underline py-4">
+                      <span className="text-start font-medium">{isRTL ? faq.questionAr : faq.questionEn}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-4">
+                      {isRTL ? faq.answerAr : faq.answerEn}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+
+            <div className="mt-2 rounded-xl border border-border bg-card/80 px-4 py-3 text-xs text-muted-foreground flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <p>
+                {isRTL
+                  ? 'تريد إجابات أوسع عن تصميم الأنظمة وتكاليفها في اليمن؟'
+                  : 'Want broader answers about system design and solar costs in Yemen?'}
+              </p>
+              <Link
+                to={isEnPath ? '/en/knowledge/solar-faq-yemen' : '/knowledge/solar-faq-yemen'}
+                className="inline-flex items-center gap-1 text-primary hover:underline"
+              >
+                {isRTL ? 'اقرأ صفحة الأسئلة الشائعة في اليمن' : 'Read the Yemen solar FAQ page'}
+                <Arrow className={cn('h-3 w-3', !isRTL && 'rotate-180')} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>

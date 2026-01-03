@@ -749,6 +749,21 @@ const SolarSystemCostYemen = () => {
                     </AccordionItem>
                   ))}
                 </Accordion>
+
+                <div className="mt-4 rounded-xl border border-border bg-card/80 px-4 py-3 text-xs text-muted-foreground flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                  <p>
+                    {language === 'ar'
+                      ? 'تريد تفاصيل أكثر عن تكاليف وأنظمة الطاقة الشمسية في اليمن؟'
+                      : 'Want deeper answers about solar costs and systems in Yemen?'}
+                  </p>
+                  <Link
+                    to="/knowledge/solar-faq-yemen"
+                    className="inline-flex items-center gap-1 text-primary hover:underline"
+                  >
+                    {language === 'ar' ? 'اقرأ صفحة الأسئلة الشائعة في اليمن' : 'Read the Yemen solar FAQ page'}
+                    <ChevronRight className="h-3 w-3" />
+                  </Link>
+                </div>
               </section>
 
               {/* CTA */}
