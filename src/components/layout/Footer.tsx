@@ -1,9 +1,10 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube, Zap, ChevronUp } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import logo from '@/assets/logo.png';
 
-export default function Footer() {
+const Footer = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement>>((_props, ref) => {
   const { t, isRTL } = useLanguage();
   const currentYear = new Date().getFullYear();
 
@@ -28,7 +29,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-background relative overflow-hidden">
+    <footer ref={ref} className="bg-foreground text-background relative overflow-hidden">
       {/* Glass gradient top edge */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-secondary/50 to-transparent" />
       
@@ -47,6 +48,7 @@ export default function Footer() {
                 alt={isRTL ? 'القطاع لأنظمة الطاقة الشمسية والكهرباء' : 'Al-Qatta Solar Energy Systems'} 
                 width={258}
                 height={84}
+                loading="lazy"
                 className="h-14 w-auto brightness-0 invert transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
@@ -174,4 +176,8 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+});
+
+Footer.displayName = 'Footer';
+
+export default Footer;

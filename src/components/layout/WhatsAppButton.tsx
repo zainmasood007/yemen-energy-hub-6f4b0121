@@ -1,13 +1,13 @@
+import React from 'react';
 import { MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/i18n/LanguageContext';
 import { cn } from '@/lib/utils';
 
-interface WhatsAppButtonProps {
-  className?: string;
+interface WhatsAppButtonProps extends React.HTMLAttributes<HTMLAnchorElement> {
   showText?: boolean;
 }
 
-export default function WhatsAppButton({ className, showText = false }: WhatsAppButtonProps) {
+const WhatsAppButton = React.forwardRef<HTMLAnchorElement, WhatsAppButtonProps>(({ className, showText = false, ...props }, ref) => {
   const { isRTL } = useLanguage();
   
   const whatsappNumber = '967777800063';
@@ -22,6 +22,7 @@ export default function WhatsAppButton({ className, showText = false }: WhatsApp
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
+      ref={ref}
       className={cn(
         "fixed bottom-6 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl animate-pulse-glow",
         isRTL ? "left-6" : "right-6",
@@ -29,6 +30,7 @@ export default function WhatsAppButton({ className, showText = false }: WhatsApp
         className
       )}
       aria-label="Contact on WhatsApp"
+      {...props}
     >
       <MessageCircle className="h-6 w-6 fill-current" />
       {showText && (
@@ -38,4 +40,7 @@ export default function WhatsAppButton({ className, showText = false }: WhatsApp
       )}
     </a>
   );
-}
+});
+
+export default WhatsAppButton;
+
