@@ -9,7 +9,7 @@ export function PylontechSection() {
   const Arrow = isRTL ? ArrowLeft : ArrowRight;
 
   const features = [
-    { value: '6000+', label: isRTL ? 'دورة شحن' : 'Charge Cycles', icon: Zap },
+    { value: '8000+', label: isRTL ? 'دورة شحن' : 'Charge Cycles', icon: Zap },
     { value: '10', label: isRTL ? 'سنوات ضمان' : 'Years Warranty', icon: Shield },
     { value: '95%+', label: isRTL ? 'كفاءة' : 'Efficiency', icon: Battery },
     { value: 'A+', label: isRTL ? 'تصنيف الأمان' : 'Safety Rating', icon: Award },

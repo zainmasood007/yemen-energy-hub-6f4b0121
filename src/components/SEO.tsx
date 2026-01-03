@@ -81,7 +81,7 @@ export default function SEO({
       <meta property="og:type" content={ogType} />
       <meta property="og:url" content={currentUrl} />
       <meta property="og:image" content={fullOgImage} />
-      <meta property="og:site_name" content={isArabic ? 'القطع للطاقة الشمسية' : 'Al-Qatta Solar Energy'} />
+      <meta property="og:site_name" content={isArabic ? 'القطاع للطاقة الشمسية' : 'Al-Qatta Solar Energy'} />
       <meta property="og:locale" content={isArabic ? 'ar_YE' : 'en_US'} />
 
       {/* Twitter Card */}

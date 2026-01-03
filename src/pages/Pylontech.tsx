@@ -13,7 +13,7 @@ export default function Pylontech() {
   const [selectedProduct, setSelectedProduct] = useState<number | null>(null);
   
   const features = [
-    { value: '6000+', label: isRTL ? 'دورة شحن' : 'Charge Cycles', icon: Zap, desc: isRTL ? 'أكثر من 15 سنة استخدام' : '15+ years of use' },
+    { value: '8000+', label: isRTL ? 'دورة شحن' : 'Charge Cycles', icon: Zap, desc: isRTL ? 'أكثر من 15 سنة استخدام' : '15+ years of use' },
     { value: '10', label: isRTL ? 'سنوات ضمان' : 'Years Warranty', icon: Shield, desc: isRTL ? 'ضمان المصنع الكامل' : 'Full factory warranty' },
     { value: '95%+', label: isRTL ? 'كفاءة الشحن' : 'Round-trip Efficiency', icon: Gauge, desc: isRTL ? 'أعلى كفاءة في السوق' : 'Market-leading efficiency' },
     { value: 'A+', label: isRTL ? 'تصنيف الأمان' : 'Safety Rating', icon: Award, desc: isRTL ? 'شهادات عالمية' : 'Global certifications' },

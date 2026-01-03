@@ -20,14 +20,14 @@ export interface QuoteData {
 // Company info
 const COMPANY_INFO = {
   nameEn: "Al-Qatta Solar Energy Systems",
-  nameAr: "مؤسسة القطه لمنظومات الطاقة الشمسية",
+  nameAr: "مؤسسة القطاع لأنظمة الطاقة الشمسية والكهرباء",
   subtitle: "Authorized Pylontech Agent in Yemen",
   phone1: "+967 777 800 063",
   phone2: "+967 1 237 379",
-  website: "www.alqatta-solar.com",
-  email: "info@alqatta-solar.com",
-  addressEn: "Sana'a, Yemen - Taiz Street",
-  addressAr: "صنعاء، اليمن - شارع تعز",
+  website: "www.alqatta.com",
+  email: "info@alqatta.com",
+  addressEn: "Yemen - Sana'a - Sho'ub District - Next to the Military Hospital",
+  addressAr: "اليمن - صنعاء - مديرية شعوب - بجوار المستشفى العسكري",
 };
 
 // Generate unique quote number
