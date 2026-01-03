@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import { ThemeProvider } from "@/hooks/use-theme";
+import { ScrollToTop } from "@/components/layout/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ export function RootLayout() {
           <TooltipProvider>
             <Toaster />
             <Sonner />
+            <ScrollToTop />
             <Outlet />
           </TooltipProvider>
         </LanguageProvider>

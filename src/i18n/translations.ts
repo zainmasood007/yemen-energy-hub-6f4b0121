@@ -25,7 +25,7 @@ export const translations = {
 
   // Features
   features: {
-    title: { ar: 'لماذا تختار القطع؟', en: 'Why Choose Al-Qatta?' },
+    title: { ar: 'لماذا تختار القطاع؟', en: 'Why Choose Al-Qatta?' },
     authorized: {
       title: { ar: 'وكيل معتمد', en: 'Authorized Agent' },
       desc: { ar: 'الوكيل الرسمي والوحيد لبطاريات Pylontech في اليمن', en: 'The official and only Pylontech battery agent in Yemen' },
@@ -98,7 +98,7 @@ export const translations = {
     authorized: { ar: 'وكيل معتمد ومعتمد', en: 'Authorized & Certified Agent' },
     whyTitle: { ar: 'لماذا Pylontech؟', en: 'Why Pylontech?' },
     features: {
-      lifespan: { ar: '+6000 دورة شحن', en: '6000+ Charge Cycles' },
+      lifespan: { ar: '+8000 دورة شحن', en: '8000+ Charge Cycles' },
       warranty: { ar: '10 سنوات ضمان', en: '10 Years Warranty' },
       safety: { ar: 'أعلى معايير الأمان', en: 'Highest Safety Standards' },
       efficiency: { ar: 'كفاءة 95%+', en: '95%+ Efficiency' },
